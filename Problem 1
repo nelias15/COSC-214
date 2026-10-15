@@ -1,0 +1,20 @@
+import java.util.Stack;
+
+public class StackDemo 
+{
+    public static void main(String[] args) 
+{
+        Stack<String> stringStack = new Stack<>();
+
+        stringStack.push("Java");
+        stringStack.push("Python");
+        stringStack.push("C++");
+        stringStack.push("JavaScript");
+        stringStack.push("Ruby");
+
+        System.out.println("--- Stack Elements ---");
+        for (String item : stringStack) {
+            System.out.println(item);
+        }
+    }
+}
