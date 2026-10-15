@@ -1,0 +1,19 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class QueueDemo {
+    public static void main(String[] args) {
+        Deque<String> stringQueue = new ArrayDeque<>();
+
+        stringQueue.offer("Apple");
+        stringQueue.offer("Banana");
+        stringQueue.offer("Cherry");
+        stringQueue.offer("Date");
+        stringQueue.offer("Elderberry");
+
+        System.out.println("--- Queue Elements ---");
+        for (String item : stringQueue) {
+            System.out.println(item);
+        }
+    }
+}
